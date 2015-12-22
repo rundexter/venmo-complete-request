@@ -62,7 +62,8 @@ module.exports = _.merge({
              * You should update this section with some test input for testing your module
              */
             input: {
-                status: 'pending'
+                payment: '1845049424938533880',
+                action: 'approve'
             }
         }
     }

@@ -50,8 +50,8 @@ module.exports = {
         if (!accessToken)
             return this.fail('A [venmo_access_token] environment need for this module.');
 
-        if (!inputs.payment)
-            return this.fail('A [payment] need for this module.');
+        if (!inputs.payment || !inputs.action)
+            return this.fail('A [payment,action] need for this module.');
 
         //send API request
         request.put({
